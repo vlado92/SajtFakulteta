@@ -1,0 +1,77 @@
+ .panel-default>.panel-heading{
+    background-color: #c1c1ba;
+    text-align: center;
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.profesor{
+    visibility: hidden;
+    display: none;
+}
+
+.asistent{
+    visibility: hidden;
+    display: none;
+}
+@media (min-width: 1200px){
+    .paragraph{
+        font-size: 5px;
+        min-height: 96px;
+        max-height: 96px;
+    }
+    .leftPanels {
+        min-height:380px;
+    }
+
+
+    .ispitni .author-details{
+        min-height:39px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+    .ispitni .panel-footer{
+        min-height:100px;
+    }
+}
+@media (min-width: 1679px){
+    .kolona{
+        width: 50%;
+    }
+}
+@media (min-width: 4029px){
+    .kolona{
+        width: 25%;
+    }
+}
+.slika{
+    min-height: 117px;
+    max-height: 117px;
+}
+
+.panel-default>.naslov{
+    background-color: #ffff00;
+    text-align: center;
+}
+.panel-default>.predmetHead{
+    background-color:#fffabc;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+.predmetTabela {
+    text-align: center;
+}

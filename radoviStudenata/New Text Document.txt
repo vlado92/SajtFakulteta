@@ -1,0 +1,322 @@
+﻿<html>
+<head>
+
+<!--
+https://github.com/Jelena92/Flappy_fish.git 				Jelena Vasic
+https://github.com/natasa-ilic/Mastermind.git 				Natasa Ilic
+https://github.com/draganapeter/battleship.git 				Dragana Peter
+https://github.com/jovana93/Space-ship.git 					Jovana Bundalo
+https://github.com/marijana94/ScientificCalculator.git 		Marijana Dragicevic 
+https://github.com/martinamico93/DoodleJump.git				Marta Cvoro
+https://github.com/zorica90/Adressbook.git					Zorica Jankovic
+https://github.com/vanjas89/X_O_Extended.git				Vanja Stankovic
+-->
+<link rel="stylesheet" 
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../CSS/stilPocetna.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="../index.html">Математика и рачунарство</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Година студија
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../godina studija/godina.html?year=0">Прва година</a></li>
+						<li><a href="../godina studija/godina.html?year=1">Друга година</a></li>
+						<li><a href="../godina studija/godina.html?year=2">Трећа година</a></li>
+						<li><a href="../godina studija/godina.html?year=3">Четврта година</a></li>
+						<li><a href="#">Мастер студије</a></li>
+						<li><a href="#">Докторске студије</a></li>
+					</ul>
+				</li>
+				<li><a href="../profesor/profesor.html">Професори</a></li>
+				<li><a href="../radoviStudenata/radovi.html">Радови студената</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>	
+<div class="row">
+	<div class="col-md-6 col-xs-12 col-lg-4">
+		<div class="row" style="margin-left:-21px">
+			<div class="col-xs-12">
+				<div class="panel panel-default studentPanel">
+					<div class="panel-heading">
+						<b>Владимир Кунарац</b>
+					</div>
+					<div class="panel-body" style="padding-top: 5px" >
+						<div class="row">
+							<div class="col-md-6 col-xs-12 col-lg-12 predmetNadPanel">
+								<div class="panel panel-default predmetPanel2Predmeta" >
+									<div class="panel-heading  predmetHead">
+										<b>Програмски језици</b>
+									</div>
+									<div class="panel-body predmetBody">
+										<div>
+										<p class="col-xs-8 col-md-12">Овдје се налази судоку, игра прављена у Јави</p>
+											<a target='_blank' href="Sudoku.rar" align="center">
+												<img src="https://cardgames.io/sudoku/images/sudoku-logo.png" alt='slika igre'  class = "col-lg-8 col-md-5 col-sm-4 col-xs-4">
+											</a>
+										</div>
+									</div>
+									<div class="panel-footer">
+										<a href="https://github.com/vlado92/Sudoku.git">Код игре</a>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-md-6 col-xs-12  col-lg-12 predmetNadPanel">
+								<div class="panel panel-default predmetPanel2Predmeta">
+									<div class="panel-heading  predmetHead">
+										<b>Инфомациони системи</b>
+									</div>
+									<div class="panel-body predmetBody">
+										<div>
+											<p  class="col-xs-8 col-md-12">Овдје се налази студентски сервис прављен у С#</p>
+											<a target='_blank' href="https://github.com/vlado92/Sudoku.git">
+												<img src="http://www.nuigalway.ie/student_services/images/ss_logo_400_138.png" alt='slika'  class = "col-lg-8 col-md-5 col-sm-4	 col-xs-4">
+											</a>
+										</div>
+									</div>
+									<div class="panel-footer">
+										<a href="Studentski Servis - kod.rar">Код</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 col-xs-12 col-lg-4">
+		<div class="row" style="margin-left:-21px">
+			<div class="col-xs-12" >
+				<div class="panel panel-default predmetPanel">
+					<div class="panel-heading">
+						<b>Јелена Васић</b>
+					</div>
+					<div class="panel-body" style="padding-top: 5px;" >
+						<div class="row" > 
+							<div class="col-sm-12 col-xs-12 predmetNadPanel">
+								<div class="panel panel-default predmetPanel1Predmet">
+									<div class="panel-heading predmetHead">
+										<b>Програмски језици</b>
+									</div>
+									<div class="panel-body  predmetBody">
+										<div>
+										<p class="col-xs-8 col-md-12" class="igraTekst">Овдје се налази Flappy fish, игра прављена у Јави</p>
+											<a target='_blank' href="FlappyFish.rar" align="center">
+												<img src="flappyFish.png" alt='slika igre' class = "col-lg-8 col-md-5 col-sm-4 col-xs-4">
+											</a>
+										</div>
+									</div>
+									<div class="panel-footer">
+										<a href="https://github.com/Jelena92/Flappy_fish.git">Код игре</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+<!-- odavde je kopija -->
+	<div class="col-md-6 col-xs-12 col-lg-4">
+		<div class="row" style="margin-left:-21px">
+			<div class="col-xs-12" >
+				<div class="panel panel-default predmetPanel">
+					<div class="panel-heading">
+						<b>Јелена Васић</b>
+					</div>
+					<div class="panel-body" style="padding-top: 5px;" >
+						<div class="row" > 
+							<div class="col-sm-12 col-xs-12 predmetNadPanel">
+								<div class="panel panel-default predmetPanel1Predmet">
+									<div class="panel-heading predmetHead">
+										<b>Програмски језици</b>
+									</div>
+									<div class="panel-body  predmetBody">
+										<div>
+										<p class="col-xs-8 col-md-12" class="igraTekst">Овдје се налази Flappy fish, игра прављена у Јави</p>
+											<a target='_blank' href="FlappyFish.rar" align="center">
+												<img src="flappyFish.png" alt='slika igre' class = "col-lg-8 col-md-5 col-sm-4 col-xs-4">
+											</a>
+										</div>
+									</div>
+									<div class="panel-footer">
+										<a href="https://github.com/Jelena92/Flappy_fish.git">Код игре</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="col-md-6 col-xs-12 col-lg-4">
+		<div class="row" style="margin-left:-21px">
+			<div class="col-xs-12" >
+				<div class="panel panel-default predmetPanel">
+					<div class="panel-heading">
+						<b>Јелена Васић</b>
+					</div>
+					<div class="panel-body" style="padding-top: 5px;" >
+						<div class="row" > 
+							<div class="col-sm-12 col-xs-12 predmetNadPanel">
+								<div class="panel panel-default predmetPanel1Predmet">
+									<div class="panel-heading predmetHead">
+										<b>Програмски језици</b>
+									</div>
+									<div class="panel-body  predmetBody">
+										<div>
+										<p class="col-xs-8 col-md-12" class="igraTekst">Овдје се налази Flappy fish, игра прављена у Јави</p>
+											<a target='_blank' href="FlappyFish.rar" align="center">
+												<img src="flappyFish.png" alt='slika igre' class = "col-lg-8 col-md-5 col-sm-4 col-xs-4">
+											</a>
+										</div>
+									</div>
+									<div class="panel-footer">
+										<a href="https://github.com/Jelena92/Flappy_fish.git">Код игре</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="col-md-6 col-xs-12 col-lg-4">
+		<div class="row" style="margin-left:-21px">
+			<div class="col-xs-12" >
+				<div class="panel panel-default predmetPanel">
+					<div class="panel-heading">
+						<b>Јелена Васић</b>
+					</div>
+					<div class="panel-body" style="padding-top: 5px;" >
+						<div class="row" > 
+							<div class="col-sm-12 col-xs-12 predmetNadPanel">
+								<div class="panel panel-default predmetPanel1Predmet">
+									<div class="panel-heading predmetHead">
+										<b>Програмски језици</b>
+									</div>
+									<div class="panel-body  predmetBody">
+										<div>
+										<p class="col-xs-8 col-md-12" class="igraTekst">Овдје се налази Flappy fish, игра прављена у Јави</p>
+											<a target='_blank' href="FlappyFish.rar" align="center">
+												<img src="flappyFish.png" alt='slika igre' class = "col-lg-8 col-md-5 col-sm-4 col-xs-4">
+											</a>
+										</div>
+									</div>
+									<div class="panel-footer">
+										<a href="https://github.com/Jelena92/Flappy_fish.git">Код игре</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	
+<!--	
+	<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-4">
+	<div class="row">
+		<div class="panel panel-default news-panel ">
+			<div class="panel-heading klasa">
+				<b>МНМ 1</b>
+			</div>
+			<div class="author-details">
+				Аутор: Марко Ћитић, Посљедња измјена: 27.12.2016 у 09:36
+			</div>
+			<div class="panel-body"> 
+				<p>У прилогу је табела са досадашњим резултатима. Пети део може се полагати у овим терминима: 16.1. у 13:00, 18.1. у 10:00.</p>
+			</div>
+			<div class="panel-footer">
+				<b>Прикључене датотеке: </b>
+				<a href="http://www.ffuis.edu.ba/media/attachments/2016/12/27/MNM1.docx">резултати</a>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-4">
+	<div class="row">
+		<div class="panel panel-default news-panel ">
+			<div class="panel-heading klasa">
+				<b>МНМ 2</b>
+			</div>
+			<div class="author-details">
+				Аутор: Марко Ћитић, Посљедња измјена: 27.12.2016 у 09:36
+			</div>
+			<div class="panel-body"> 
+				<p>У прилогу је табела са досадашњим резултатима. Пети део може се полагати у овим терминима: 16.1. у 13:00, 18.1. у 10:00.</p>
+			</div>
+			<div class="panel-footer">
+				<b>Прикључене датотеке: </b>
+				<a href="http://www.ffuis.edu.ba/media/attachments/2016/12/27/MNM1.docx">резултати</a>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-4">
+	<div class="row">
+		<div class="panel panel-default news-panel ">
+			<div class="panel-heading klasa">
+				<b>МНМ 3</b>
+			</div>
+			<div class="author-details">
+				Аутор: Марко Ћитић, Посљедња измјена: 27.12.2016 у 09:36
+			</div>
+			<div class="panel-body"> 
+				<p>У прилогу је табела са досадашњим резултатима. Пети део може се полагати у овим терминима: 16.1. у 13:00, 18.1. у 10:00.</p>
+			</div>
+			<div class="panel-footer">
+				<b>Прикључене датотеке: </b>
+				<a href="http://www.ffuis.edu.ba/media/attachments/2016/12/27/MNM1.docx">резултати</a>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-4">
+	<div class="row">
+		<div class="panel panel-default news-panel ">
+			<div class="panel-heading klasa">
+				<b>МНМ4</b>
+			</div>
+			<div class="author-details">
+				Аутор: Марко Ћитић, Посљедња измјена: 27.12.2016 у 09:36
+			</div>
+			<div class="panel-body"> 
+				<p>У прилогу је табела са досадашњим резултатима. Пети део може се полагати у овим терминима: 16.1. у 13:00, 18.1. у 10:00.</p>
+			</div>
+			<div class="panel-footer">
+				<b>Прикључене датотеке: </b>
+				<a href="http://www.ffuis.edu.ba/media/attachments/2016/12/27/MNM1.docx">резултати</a>
+			</div> 
+		</div>
+	</div>
+</div>-->
+</div>
+</body>
+</html>
+		

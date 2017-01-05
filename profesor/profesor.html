@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Професор</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/stil.css">
+</head>
+<body onload="showProfessorOnPageLoad()">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Математика и рачунарство</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Година студија
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../godina studija/godina.html?year=0">Прва година</a></li>
+                        <li><a href="../godina studija/godina.html?year=1">Друга година</a></li>
+                        <li><a href="../godina studija/godina.html?year=2">Трећа година</a></li>
+                        <li><a href="../godina studija/godina.html?year=3">Четврта година</a></li>
+                        <li><a href="../godina studija/masterStudije.html">Мастер студије</a></li>
+                        <li><a href="#">Докторске студије</a></li>
+                    </ul>
+                </li>
+                <li><a href="../profesor/profesor.html">Професори</a></li>
+                <li><a href="../radoviStudenata/radovi.html">Радови студената</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Редовни професори
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <a onclick="showProfessorOnClick('Pikula-Milenko');">
+                        проф. др Пикула Миленко
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Elez-Nebojsa');">
+                        проф. др Елез Небојша
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Drakulic-Darko');">
+                        доц. др Дракулић Дарко
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Vladicic-Vladimir');">
+                        доц. др Владичић Владимир
+                    </a>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Асистенти
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+
+                    <a onclick="showProfessorOnClick('Sljuka-Aljosa');">
+                        мр Шљука Аљоша
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Radovic-Jelena');">
+                        мр Радовић Јелена
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Citic-Marko');">
+                        мр Ћитић Марко
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Papaz-Ognjen');">
+                        мр Папаз Огњен
+                    </a>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Ванредни професори
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <a onclick="showProfessorOnClick('Ilic-Georgijevic-Emil');">
+                        доц др Илић-Георгијевић Емил
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Lalovic-Ilija');">
+                        доц др Лаловић Илија
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Govedarica-Vidan');">
+                        проф. др Говедарица Видан
+                    </a>
+                    <br>
+                    <a onclick="showProfessorOnClick('Jojic-Dusko');">
+                        проф. др Јојић Душко
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="hidden-md-down col-md-6 hidden-xs hidden-sm" style="max-height:200px;">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="max-height:200px;">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="http://www.palelive.com/images/stories/foto-vijesti/fakulteti_pale01.jpg" alt="SLIka faaxa" style="max-height:200px; display: block;
+					margin-left: auto;
+					margin-right: auto;">
+                <div class="carousel-caption">
+                    Slika Fakulteta je ovde
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://coverjunction.s3.amazonaws.com/manual/low/colorful4.jpg" alt="druga slika" style="max-height:200px; display: block;
+					margin-left: auto;
+					margin-right: auto;">
+                <div class="carousel-caption">Druga slika fakulteta</div>
+            </div>
+            <div class="item">
+                <img src="http://www.palelive.com/images/stories/reportaze/zgrada_ekonomski_fakultet/ekonomski_fakultet_pale17.jpg" alt="druga slika" style="max-height:200px; display: block;
+					margin-left: auto;
+					margin-right: auto;">
+                <div class="carousel-caption">Treca</div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div id="profesori">
+    <div id="Pikula-Milenko" class="col-xs-12 profesor">
+        <h4 class="naslov"></h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst zvanje" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/image2_.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 314 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td id="predmet" class="tekst predmet" valign="top"><div align="left">
+
+                </div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:milenko.pikula@ffuis.edu.ba">milenko.pikula@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst " colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1"><span class="s2">Миленко Пикула, редовни професор, рођен је 10. 10. 1947. године,
+						у Сливљима, општина Гацко. Основну школу завршио је у Фојници код Гацка, а средњу геодетско-техничку у
+						Сарајеву. Потом је студирао на Природно-математичком факултету у Сарајеву, на Одсјеку за математику,
+						гдје је дипломирао 1972. године. Одмах по дипломирању уписао је постдипломске студије на истом факултету.
+						Године 1977. одбранио је магистарски рад из обасти функционалне анализе. Докторску дисертацију из области
+						 теорије диференцијалних оператора одбранио је такође на Природно-математичком факултету у Сарајеву, 1983.
+						 године, чиме је стекао научно звање доктора математичких наука. Одмах по завршетку студија, запослио се
+						 на Електротехничком факултету у Сарајеву, као асистент приправник на Катедри за математику. Од 1977. до
+						 1983. године запослен је у звању асистента на истој катедри. По одбрани докторске дисертације стиче
+						 звање доцента и наставља да ради на истом факултету. Током школске 1992/1993. године био је ангажован у
+						 настави на Природно-математичком факултету у Подгорици и на Факултету за поморство у Котору. Током идуће
+						 двије године стално је запослен на Факултету за поморство у Котору у звању ванредног професора.
+						 Године 1995. почиње да ради на Учитељском факултету у Ужицу. Сада је ангажован на Универзитету у
+						 Источном Сарајеву у звању редовног професора у ужим научним областима Математичка анализа и примјене и
+						 Методика наставе математике.<strong><em> </em></strong>Био је ментор за израду шест докторских
+						 дисертација. Тренутно је носилац пројекта <em>Обрнути проблеми типа Штурма-Лиувила са отклоњеним
+						 аргументом, </em>који је суфинансиран од стране Министарства науке и технологије Републике Српске.
+						 Већ двије године је рецензент <em>American Mathematical Society</em>, за чије потребе рецензира
+						 радове на руском језику, који се објављују у престижном математичком часопису
+						 <em>Mathematical Reviews. </em>Ове године учествовао је, по позиву, и излагао научни рад&nbsp;
+						 на међународној математичкој конференцији посвећеној седамдесетогодишњици живота академика
+						 В. А. Садовничија, ректора МГУ-а. Такође, ове године, по позиву, одржао је предавање на
+						 Математичком институту САНУ, у оквиру семинара.&nbsp;</span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="naslov">Документи</div>
+        <table width="90%" border="0" align="center">
+            <tbody><tr>
+                <td class="tekst">
+                    <a href="http://www.ffuis.edu.ba/media/faculty/documents/2014/12/15/Milenko_Pikula.docx">
+                        Библиографија
+                    </a>
+                </td>
+            </tr></tbody>
+        </table>
+        <div align="center" class="tekst" style="width: 100%; clear: both"></div>
+    </div>
+    <div id="Elez-Nebojsa" class="col-xs-12 profesor">
+        <h4 class="naslov"></h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/image11__.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 314 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst predmet" valign="top">
+                    <div align="left">
+                    </div>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:elez.nebojsa@ffuis.edu.ba">elez.nebojsa@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1"><span class="s2">
+							Небојша Елез рођен је 21. 10. 1962. године у Сарајеву.
+							Као средњошколац је учествовао на такмичењима из математике свих нивоа.
+							Године 1980. освојио је другу награду на међународном такмичењу у Луксембургу, 1981.
+							освојио је трећу награду на међународној олимпијади у Вашингтону. Студије математике је
+							уписао на ПМФ-у у Сарајеву. Дипломирао је 1986 године на ПМФ у Сарајеву Одсјек математика
+							теоријски смјер и стекао назив дипломирани математичар. Од 1987. до 1992. године је био у
+							сталном радном односу као асистент на Одсјеку за математику ПМФ-а у Сарајеву. Од 1992. до 1996.
+							године је радио као асистент на институту за математику ПМФа у Крагујевцу. Магистрирао је 1995.
+							године из математичких наука на ПМФ-у у Крагујевцу на тему <em>Неке класификације тополошких
+							простора</em>. Докторирао је из математичких наука на ШПМФ-у у Крагујевцу са темом <em>Неке
+							класификације тополошких простора</em>. Од 1997. до 2000. године радио је као наставник у звању
+							доцента на институту за математику ПМФ-а у Крагујевцу. Од 2000 године до данас ради као наставник
+							у сталном радном односу на Катедри за математику Филозофског факултета у Источном Сарајеву. У звање
+							ванредног професора на ужу научну област Математичка анализа и примјене је изабран 2008. године.
+							Од 1999. године до данас, са краћим прекидима, ради у допунском радном односу на Одсјеку за
+							математику ПМФ-а у Бањалуци.</span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="naslov">Документи</div>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst">
+                    <a href="http://www.ffuis.edu.ba/media/faculty/documents/2014/12/15/Nebojsa_Elez.docx">Библиографија</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div align="center" class="tekst" style="width: 100%; clear: both"></div>
+    </div>
+    <div id="Drakulic-Darko" 	class="col-xs-12 profesor">
+        <h4 class="naslov"></h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/11429478_716994748428294_2054059448_o.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 513 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst  predmet" valign="top">
+                    <div align="left"></div>
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:darko.drakulic@ffuis.edu.ba">darko.drakulic@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1">
+							<span class="s2">
+								Дарко Дракулић, виши асистент, рођен је 12. 6. 1981. године у Власеници, гдје је завршио основну и средњу школу.
+								Као средњошколац је похађао семинаре рачунарства у Истраживачкој станици Петница, у Србији.
+								Звање професор математике и информатике стекао је 2006. године на Одсјеку за математику и информатику Природно-математичког факултета Универзитета у Бањој Луци.
+								Магистарски рад под називом Развој нове Јава библиотеке за дводимензионалне геометријске конструкције, одбранио је 2010. године,
+								на Катедри за математику и рачунарство Филозофског факултета Универзитета у Источном Сарајеву, и тиме стекао звање магистра математичких наука.
+								На Универзитету у Источном Сарајеву изабран је 2007. године у звање асистента за област Рачунарство, а на истом универзитету 2011. године изабран
+								је у звање асистента за област Рачунарске науке. Као аутор или коаутор објавио је 11 радова у зборницима са међународних скупова, као и два рада у
+								научним часописима.&nbsp;
+							</span>
+                    </p>
+                    <p class="p2">
+							<span class="s2">
+								Области његовог истраживања су комбинаторна оптимизација, рачунарска геометрија и примена рачунара у настави математике.
+								Учествовао је на 6 научно-истраживачких пројеката финансираних од стране Министарства науке и технологије Републике Српске и на неколико међународних пројеката,
+								међу којима се издвајају пројекти Геогебра института (Аустрија), Завода за школство Републике Словеније и Агенције "Еуроцонтрол" (Брисел).
+							</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="naslov">Документи</div>
+        <div class="col-md-6">
+            <a href="http://www.ffuis.edu.ba/media/faculty/documents/2014/12/15/Darko_Drakulic.docx">Библиографија</a>
+        </div>
+        <div align="center" class="tekst" style="width: 100%; clear: both"></div>
+    </div>
+    <div id="Vladicic-Vladimir"  class="col-xs-12 profesor" >
+        <h4 class="naslov"></h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/image13.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 313 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst  predmet" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:vladimir.vladicic@ffuis.edu.ba">vladimir.vladicic@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1">
+							<span class="s2">
+								Владимир Владичић, доцент, рођен је 23. маја 1982. године у Фочи, гдје је завршио основну и средњу школу.
+								Након средње школе уписује Математички факултет у Београду, Смјер теоријска математика и примене. Дипломирао је 2007. године.
+								У току студија учествовао је као предавач на низ математичких кампова. Студије II циклуса уписује 2008. године на Филозофском факултету Универзитета у
+								Источном Сарајеву, и то студије математике Смјер анализа. Магистарски рад одбранио je 7. априла 2011. године. Докторску дисертацију под називом
+								<em>Примјена Фуријеових редова у инверзном проблему једначина са кашњењем,</em> одбранио је 17. априла 2013. године на Филозофском факултету Универзитета у
+								Источном Сарајеву. У фебруару 2008. почиње са радом као сарадник у настави на Филозофском факултету Универзитета у Источном Сарајеву.
+								У звање асистента изабран је 1. 10. 2008, у звање вишег асистента биран је 15. 7. 2011, а у звање доцента изабран је 26. 12. 2013. године.
+								Од школске 2009/2010. изводи наставу и на Машинском факултету Универзитета у Источном Сарајеву. Активан је члан друштва математичара Републике Српске,
+								водио је представнике Босне и Херцеговине на математичке олимпијаде 2010. године (Астана, Казахстан), 2011. године (Амстердам, Холандија) и 2012. године
+								(Мар дел Плата, Аргентина).
+							</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="naslov">Документи</div>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst">
+                    <a href="http://www.ffuis.edu.ba/media/faculty/documents/2014/12/15/Vladimir_Vladicic.docx">Библиографија</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div align="center" class="tekst" style="width: 100%; clear: both"></div>
+    </div>
+    <div id="Sljuka-Aljosa" class="col-xs-12 asistent">
+        <h4 class="naslov"></h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/image20.jpeg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 513 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst  predmet" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:aljosa.sljuka@ffuis.edu.ba">aljosa.sljuka@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1">
+							<span class="s2">
+								Аљоша Шљука, асистент, рођен је 2. 9. 1988. године у Сарајеву.
+								Похађање основне школе започео је у Основној школи „Радојка Лакић“ у Сарајеву, а завршио у Основној школи „Пале“ у Палама.
+								Гимназију је завршио у Источном Новом Сарајеву. Додипломске студије започео je не Одсјеку за математику и рачунарство Филозофског факултета
+								Универзитета у Источном Сарајеву, 2007, а завршио 2011. године. Мастер студије је завршио на Одсјеку за рачунарство и информатику Математичког
+								факултета Универзитета у Београду, 2014. године, одбраном рада на тему <em>”Нови приступ конструкцији Веб апликација користећи
+								JavaScript, AJAX и ASP.NET технологије</em>
+							</span><em>”</em>.
+                    </p>
+                    <p class="p1">
+							<span class="s2">
+								Током школовања одликован је великим бројем признања и похвала - Вуковом дипломом у основној школи,
+								похвалницом за изванредан успјех у средњој школи, већим бројем одликовања на такмичењима из математике,
+								физике и информатике у основној и средњој школи, те првим мјестом на студентском такмичењу у научним радовима
+								Приматијада 2009. у Охриду
+							</span>
+                        <span class="s3">.</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div align="center" class="tekst" style="width: 100%; clear: both"></div>
+    </div>
+    <div id="Radovic-Jelena" class="col-xs-12 asistent">
+        <h4 class="naslov"></h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/image19.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 313 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:jelena.radovic@ffuis.edu.ba">jelena.radovic@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p>Јелена Радовић, асистент, рођена је у Мостару. Основне студије&nbsp; завршила je 2012. године на Природно-математичком факултету Универзитета у Новом Саду.</p>
+                    <p class="p1">
+							<span class="s2">
+								Мастер студије Математике и основа рачунарских наука завршила је на Универзитету у Оксфорду, 2013. године, са темом
+								<em>Фуријеове трансформације на инверзним симетричним полугрупама</em>. Мастер студије Математике завршава на Природно-математичком факултету Универзитета у
+								Новом Саду 2016. године, са темом <em>Дијаграм моноиди</em>.<br>
+							</span>
+                    </p>
+                    <p class="p1">
+							<span class="s2">
+								Од марта 2014. године запослена на Катедри за математику, рачунарство и физику Филозофског факултета
+								Универзитета у Источном Сарајеву, на позицији асистента за научну област Математичка анализа и примјене. Области интересовања су
+								теорија полугрупа и теорија репрезентација.<br>
+							</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div align="center" class="tekst" style="width: 100%; clear: both">
+        </div>
+    </div>
+    <div id="Citic-Marko" class="col-xs-12 asistent">
+        <h4 class="naslov"></h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/image16.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 313 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td> </tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:marko.citic@ffuis.edu.ba">marko.citic@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1">
+							<span class="s2">
+								Марко Ћитић, виши асистент,&nbsp; рођен је 2. 9. 1980. године, у Ужицу.
+								Дипломирао је &nbsp;на Катедри за математику и рачунарство, Филозофског факултета у Источном Сарајеву.
+								Магистарски рад <em>Егзистенција неких конвексних цјелобројних полигона,</em> одбранио је 2012. године, на
+								Филозофском факултету Универзитета у Источном Сарајеву, и тиме стекао звање магистра математичких наука.
+								На Универзитету у Источном Сарајеву 2008. године изабран је у звање асистента за област Алгебра и геометрија, а
+								на истом универзитету 2012. године изабран је у звање вишег асистента за област Алгебра и геометрија. Од 2007.
+								године запослен је на Катедри за математику и рачунарство (касније Катедри за математику, рачунарство и физику) на
+								Филозофском факултету у Палама. Област његовог научног рада је комбинаторна геометрија и теорија бројева. Учествовао је на
+								4 математичке конференције Републике Српске (2011–2014) са пријављеним радовима. Као ученик основне и средње школе био је учесник
+								савезних такмичења из математике(тадашња СРЈ). Учествовао је у припреми такмичара из Републике Српске за Међународне математичке
+								олимпијаде 2008,2009 и 2013. Од 2006 учествује као члан комисије за прегледање и избор задатака на републичким и државним такмичењима из
+								математике. Био је заменик вође екипе БИХ на 17. јуниорској балканској олимпијади одржаној у Анталији 2013.године и вођа екипе БиХ на 18.
+								јуниорској балканској олимпијади одржаној у Охриду 2014.године, те заменик вође екипе БиХ на 56. Међународној математичкој олимпијади
+								одржаној на тајланду 2015. године.
+							</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="naslov">Документи</div>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst">
+                    <a href="http://www.ffuis.edu.ba/media/faculty/documents/2014/12/15/Marko_Citic.docx">Библиографија</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div align="center" class="tekst" style="width: 100%; clear: both"></div>
+    </div>
+    <div id="Papaz-Ognjen" class="col-xs-12 asistent">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td class="naslov"></td>
+            </tr></tbody>
+        </table>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"></td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.ffuis.edu.ba/media/faculty/pictures/image18.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst"> 313 </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:ognjen.papaz@ffuis.edu.ba">ognjen.papaz@ffuis.edu.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1">
+							<span class="s2">
+								Огњен Папаз рођен је 11. 7. 1988. године у Сарајеву. Основне студије завршио је 2011. године, на
+								Одсјеку за математику и рачунарство Филозофског факултета Универзитета у Источном Сарајеву. У звање
+								асистента на ужој научној области Математичка анализа и примјене изабран је 2012. године. <br>
+							</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div align="center" class="tekst" style="width: 100%; clear: both"></div>
+    </div>
+    <div id="Ilic-Georgijevic-Emil" class="col-xs-12 profesor">
+        <h4 class="naslov"> </h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"> </td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.gf.unsa.ba/nastavnici/slike/emil_ilic_georgijevic.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst">  </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:emil.ilic.georgijevic@gf.unsa.ba">emil.ilic.georgijevic@gf.unsa.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1"><span class="s2"><br></span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="naslov">
+            Документи
+        </div>
+        <div class="col-md-6">
+            <div align="center" class="tekst" style="width: 100%; clear: both">
+            </div>
+        </div>
+    </div>
+    <div id="Lalovic-Ilija" class="col-xs-12 profesor">
+        <h4 class="naslov"> </h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"> </td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst">  </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1">
+							<span class="s2">
+								Др Илија Лаловић рођен је 1950. године у Влаховљу код Калиновика. У
+								универзитетско звање доцента реизабран је 2008. године на Универзитету у Бањој
+								Луци. Први избор у звање доцента имао је 2002. године на Универзитету у Бањој
+								Луци. Докторат из Компјутерских наука стекао је на Веизмановом институту наука у
+								Реховоту, Израел, 1998. године. На истој институцији окончао је последипломски студиј
+								1992. године. Студије математике окончао је 1975. године на Математичком
+								факултету Универзитета у Београду.
+								Његова област интересовања је рачунарство
+								Наставну праксу стицао је на Универзитету 'Бен Гурион' Бер Схеба у Израелу
+								(Увод у формалне језике), Филозофском факултету Универзитета у Новом Саду
+								(Мултимедија, Информатика и друштво, Интернет новинарство), Филозофском факултету
+								(Рачунарство, Процедурално програмирање, Објектно-оријетисано програмирање) и
+								Електротехничком факултету (Основи рачунске технике, Методе програмирања и
+								програмски језици) Универзитета у Источном Сарајеву те на Природно-математичком
+								факултету (Основе програмирања, Основи рачуунарских<br>
+							</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="naslov">Документи</div>
+        <div class="col-md-6">
+            <a href="http://www.imvibl.org/dmbl/mat_bl_regije/docenti/dr_ilija_lalovic.pdf">
+                Bibliografija
+            </a>
+
+        </div>
+        <div align="center" class="tekst" style="width: 100%; clear: both">
+        </div>
+    </div>
+    <div id="Govedarica-Vidan" class="col-xs-12 profesor">
+        <h4 class="naslov"> </h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"> </td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://www.fpe.unssa.rs.ba/uploads/profili/id533/vidangovedarica.png" alt="" height="40%">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst">  </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:vidan.govedarica@etf.unssa.rs.ba">vidan.govedarica@etf.unssa.rs.ba</a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1"><span class="s2"><br></span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="naslov">Документи</div>
+        <div class="col-md-6">
+            <a href="http://www.etf.unssa.rs.ba/include/nastavni_ansambl/biografije/vidan_govedarica_biografija.pdf">Библиографија</a>
+        </div>
+        <div align="center" class="tekst" style="width: 100%; clear: both">
+        </div>
+    </div>
+    <div id="Jojic-Dusko" class="col-xs-12 profesor">
+        <h4 class="naslov"> </h4>
+        <br>
+        <table width="90%" border="0" align="center">
+            <tbody>
+            <tr>
+                <td class="tekst" width="20%">Звање</td>
+                <td class="tekst" width="80%"> </td>
+                <td rowspan="5" width="250" align="center">
+                    <img src="http://unibl.org/uploads/files/zaposleni/1382.jpg" alt="" height="20%">
+                </td>
+            </tr>
+            <tr>
+                <td class="tekst">Кабинет</td>
+                <td class="tekst">  </td>
+            </tr>
+            <tr>
+                <td class="tekst" valign="top">Предмети</td>
+                <td class="tekst" valign="top"><div align="left"></div></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="tekst">E-mail</td>
+                <td class="tekst"><strong><a href="mailto:"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst">Лична страна</td>
+                <td class="tekst"><strong><a href="" target="_blank"></a></strong></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="tekst" colspan="3">
+                    <p>&nbsp;</p>
+                    <p class="p1">
+							<span class="s2">
+								Душко (Богдан) Јојић рођен је у Бихаћу 1968. године. На Математичком факултету Универзитета у Београду
+								дипломирао је 1994. године, магистрирао 1998. године и одбранио докторску дисертацију 2007. године. У звање доцента
+								биран је на Природно-математичком факултету 2008. године. Један је од уредника часописа МАТ-КОЛ (Бања Лука),
+								ИССН 0354-6969, који уређује и публикује Научно друштво математичара Бања Лука
+								Његов математички интерес је Дискретна математика.
+								На Природно-математичком факултету Универзитета у Бањој Луци предавао је од Геометрију, Дискретму
+								математику и разне врсте калкулуса на нематематичким одсецима. На Педагошком факултету у Бихаћу предавао је,
+								између осталих, Алгебри и Теорију бројева. У периоду 1996-1999. радио је као асистент на Пољопривредном факултету
+								Универзитета у Београд, а у времену 1999-2007. радио је у својству вишег асистента на већем броју специјалних
+								математичких курсева.<br>
+							</span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="naslov">
+            Документи
+        </div>
+        <div class="col-md-6">
+            <a href="http://www.imvibl.org/dmbl/mat_bl_regije/docenti/dr_dusko_jojic.pdf">
+                Bibliografija
+            </a>
+
+        </div>
+        <div align="center" class="tekst" style="width: 100%; clear: both">
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="../godina studija/skriptaZaGodinu.js"></script>
+
+</body>
+</html>

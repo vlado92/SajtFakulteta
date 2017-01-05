@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../CSS/stil.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="SubjectLoad()">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Математика и рачунарство</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Година студија
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../godina studija/godina.html?year=0">Прва година</a></li>
+                        <li><a href="../godina studija/godina.html?year=1">Друга година</a></li>
+                        <li><a href="../godina studija/godina.html?year=2">Трећа година</a></li>
+                        <li><a href="../godina studija/godina.html?year=3">Четврта година</a></li>
+                        <li><a href="../godina studija/masterStudije.html">Мастер студије</a></li>
+                        <li><a href="#">Докторске студије</a></li>
+                    </ul>
+                </li>
+                <li><a href="../profesor/profesor.html">Професори</a></li>
+                <li><a href="../radoviStudenata/radovi.html">Радови студената</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <table width="100%" border="1" cellspacing="0" cellpadding="2" align="left" >
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <table width="100%" border="1" cellspacing="0" cellpadding="2" align="left" >
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="divZaIspis" class="col-xs-12" style="padding-top:10px">
+    <p id="profesor"></p>
+    <div id="infoOPredmetu" class="col-xs-4 "></div>
+    <div id="Literatura" class="col-xs-4"></div>
+    <div id="ProgramPredmeta" class="col-xs-4"></div>
+</div>
+
+<script type="text/javascript" src="skriptaZaGodinu.js"></script>
+</body>
+</html>
