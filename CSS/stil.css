@@ -1,5 +1,5 @@
  .panel-default>.panel-heading{
-    background-color: #c1c1ba;
+    background-color: #ccd1d2;
     text-align: center;
 }
 
@@ -60,11 +60,11 @@ body{
 }
 
 .panel-default>.naslov{
-    background-color: #ffff00;
+    background-color:#cbcdfb;
     text-align: center;
 }
 .panel-default>.predmetHead{
-    background-color:#fffabc;
+    background-color: rgba(42, 243, 36, 0.5);
     text-align: center;
 }
 
